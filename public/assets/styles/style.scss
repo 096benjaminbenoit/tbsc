@@ -1,0 +1,140 @@
+body, footer {
+    background-color: #171717;
+}
+
+/* NAV BAR */
+
+.navbar {
+    @media screen and (max-width: 991px) {
+        background-color: #212529;
+    }
+    position: absolute;
+    width: 100vw;
+}
+
+.navbar-brand img {
+    @media screen and (max-width: 375px) {
+        height: 25px;
+    }
+}
+
+/* LANDING */
+
+.landing_slider {
+    padding-top: 70px;
+
+    @media screen and (max-width: 991px) {
+        padding-top: 80px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 120px;
+    }
+}
+
+.landing_slider-cover {
+    width: 40vw;
+    box-shadow: 5px 5px 15px 5px #000000;
+
+    @media screen and (max-width: 768px) {
+        width: 50vw;
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 60vw;
+    }
+}
+
+
+.landing_slider-cd {
+    position: absolute;
+    z-index: -1;
+    width: 38vw;
+
+
+    @media screen and (max-width: 768px) {
+        width: 48vw;
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 58vw;
+    }
+}
+
+.landing_slider video {
+    z-index: -100;
+}
+
+.landing_infos_section {
+    background-image: url("https://www.theblackstoneco.com/wp-content/uploads/2022/07/tbsc_site_landing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.landing_social-list {
+
+    @media screen and (max-width: 610px) {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.divider {
+    width: 75%;
+
+    @media screen and (min-width: 900px) {
+        width: 50%;
+    }
+}
+
+.landing_news {
+    img {
+        min-width: 40vw;
+        max-width: 70vw;
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+}
+
+.landing_album-releases {
+    img {
+        width: 300px;
+        box-shadow: 5px 5px 15px 3px #000000;
+
+        @media screen and (min-width: 950px) {
+            width: 450px;
+        }
+    }
+}
+
+.landing_last-video {
+
+    iframe {
+        width: 300px;
+        height: 200px;
+        
+        @media screen and (min-width: 550px) {
+            width: 500px;
+            height: 375px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 1120px;
+            height: 630px;
+        }
+    }
+}
+
+.landing_store-products {
+    img {
+        width: 300px;
+    }
+}

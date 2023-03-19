@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/styles/style.css">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -13,7 +16,55 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <body>
+    <body class="">
+        <nav class="navbar navbar-expand-lg navbar-dark pt-3">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="#"><img src="assets/img/tbsc_logo_white_line.png" height="30px" alt=""></a>
+                <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mx-auto mb-2 mb-lg-0 d-flex gap-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link fw-light " href="#">LANDING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-light " href="#">TBSC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-light " href="#">MUSIC</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="navbar-brand" href="#"><img src="assets/img/tbsc_logo_white_line.png" height="35px" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-light " href="#">EPK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-light " href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-light " href="#">CONNECT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         {% block body %}{% endblock %}
+        <footer class="pb-5">
+            <div class="">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <p class="text-secondary">Copyright &copy; the BlackStone co & Fat is Life 2023</p>
+                    <div class="d-flex justify-content-center align-items-center gap-4">
+                        <a class="btn btn-dark btn-social" href="#" aria-label="Twitter"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social" href="#" aria-label="Facebook"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social" href="#" aria-label="LinkedIn"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
     </body>
 </html>
