@@ -68,7 +68,25 @@
         </section>
         <img class=" divider py-5 mx-auto d-block" src="assets/img/tbsc_divider.jpeg" alt="">
         <section class="landing_next-show">
-    
+            <h2 class="text-light fw-bold display-5 text-center pb-5">SHOWS</h2>
+            <table class="table text-light text-center w-75 mx-auto">
+                <thead>
+                    <tr>
+                        <th scope="col" class="fs-5">DATE</th>
+                        <th scope="col" class="fs-5">EVENT</th>
+                        <th scope="col" class="fs-5">PLACE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for show in shows %}
+                    <tr>
+                        <td class="py-4">{{show.date | date('d/m/Y')}}</td>
+                        <td class="py-4">{{show.name}}</td>
+                        <td class="py-4">{{show.place}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </section>
         <img class=" divider py-5 mx-auto d-block" src="assets/img/tbsc_divider.jpeg" alt="">
         <section class="landing_playlist">

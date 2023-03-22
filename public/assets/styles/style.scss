@@ -33,15 +33,15 @@ body, footer {
 }
 
 .landing_slider-cover {
-    width: 40vw;
+    width: 35vw;
     box-shadow: 5px 5px 15px 5px #000000;
 
     @media screen and (max-width: 768px) {
-        width: 50vw;
+        width: 45vw;
     }
 
     @media screen and (max-width: 450px) {
-        width: 60vw;
+        width: 55vw;
     }
 }
 
@@ -49,15 +49,15 @@ body, footer {
 .landing_slider-cd {
     position: absolute;
     z-index: -1;
-    width: 38vw;
+    width: 33vw;
 
 
     @media screen and (max-width: 768px) {
-        width: 48vw;
+        width: 43vw;
     }
 
     @media screen and (max-width: 450px) {
-        width: 58vw;
+        width: 53vw;
     }
 }
 
