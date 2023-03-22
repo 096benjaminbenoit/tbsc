@@ -1,10 +1,9 @@
 // LANDING //
 
 // landing cd animation //
-const windowWidthPercentage = window.innerWidth * 0.2;
 
 gsap.to(".landing_slider-cd", {
-    x: windowWidthPercentage, duration: 2});
+    xPercent: 50, duration: 2});
 
 gsap.to(".landing_slider-cd", {
     rotation: -360,
@@ -12,3 +11,5 @@ gsap.to(".landing_slider-cd", {
     ease: Linear.easeNone,
     transformOrigin:"50% 50%"
 });
+
+// landing all animations //
